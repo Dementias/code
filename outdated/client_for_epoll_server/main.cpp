@@ -98,7 +98,7 @@ int work(int N, int Time, int i)
         return -2;
     }
 
-    // Устанавливаем соединения с сервером
+    // Устанавливаем соединениe с сервером
     int con_error;
 
     con_error = connect(cl_socket, (struct sockaddr*)&server_addr, sizeof(server_addr));
