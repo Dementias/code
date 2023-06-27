@@ -24,7 +24,7 @@
     <ProjectGuid>{8c114bf3-5af0-416b-8722-c74b333b5344}</ProjectGuid>
     <RootNamespace>cqueue</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>MutexBasedCQueue</ProjectName>
+    <ProjectName>MutexCQueue</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -132,7 +132,7 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="MutexBasedCQueue.hxx" />
+    <ClInclude Include="MutexCQueue.hxx" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
