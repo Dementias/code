@@ -1,11 +1,11 @@
 #include <functional>
 #include <thread>
 #include <vector>
-#include "MutexBasedCQueue.hxx"
+#include "MutexCQueue.hxx"
 
 int main()
 {
-    MutexBasedCQueue<int> cq;
+    MutexCQueue<int> cq;
     std::vector<std::thread> treds;
     std::function<void( int )> f;
 
