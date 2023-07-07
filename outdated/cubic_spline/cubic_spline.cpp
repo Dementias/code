@@ -5,6 +5,7 @@
 #include "matrix.h"
 #include <cassert>
 #include <algorithm>
+
 // 2D cubic spline
 
 class point

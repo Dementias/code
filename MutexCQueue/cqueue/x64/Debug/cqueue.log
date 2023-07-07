@@ -1,0 +1,6 @@
+﻿  main.cpp
+C:\Users\svrcd\source\repos\code\cqueue\cqueue\MutexBasedCQueue.hxx(118,25): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+C:\Users\svrcd\source\repos\code\cqueue\cqueue\MutexBasedCQueue.hxx(96): message : while compiling class template member function 'bool MutexBasedCQueue<int>::tryBiggerQueue_(void)'
+C:\Users\svrcd\source\repos\code\cqueue\cqueue\MutexBasedCQueue.hxx(34): message : see reference to function template instantiation 'bool MutexBasedCQueue<int>::tryBiggerQueue_(void)' being compiled
+C:\Users\svrcd\source\repos\code\cqueue\cqueue\main.cpp(8): message : see reference to class template instantiation 'MutexBasedCQueue<int>' being compiled
+  cqueue.vcxproj -> C:\Users\svrcd\source\repos\code\cqueue\x64\Debug\MutexBasedCQueue.exe
