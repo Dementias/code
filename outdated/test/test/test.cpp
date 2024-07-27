@@ -1,6 +1,6 @@
 #include <iostream>
 
-void overloaded( int const& arg )
+void overloaded( int& arg )
 {
     std::cout << "by lvalue\n";
 }
