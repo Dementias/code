@@ -4,6 +4,9 @@
 
 namespace
 {
+    const std::string cFailedStatus = "FAILED";
+    const std::string cPassedStatus = "PASSED";
+
     int sGetSum( const std::vector<int>& array, const std::pair<int, int>& segment )
     {
         auto [lb, rb] = segment;
@@ -38,9 +41,9 @@ int main()
     {
         auto segResult = segTree.getSum( segment.first, segment.second );
         auto expectedResult = sGetSum( inputArray, segment );
-        std::string passed = segResult == expectedResult ? "PASSED" : "FAILED";
+        std::string passed = segResult == expectedResult ? cPassedStatus : cFailedStatus;
         std::cout << n++ << "th TEST " << passed;
-        if ( passed == "FAILED" )
+        if ( passed == cFailedStatus )
         {
             std::cout << " Segment Tree Result: " << segResult << ". Expected Result: "<< expectedResult;
         }
