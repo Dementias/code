@@ -35,17 +35,21 @@ UnefficientSegmentTree::UnefficientSegmentTree( int leftBorder_, int rightBorder
 
     int UnefficientSegmentTree::getSum( int lb, int rb ) const
     {
+        // invalid segment
         if ( lb >= rb )
         {
             return 0;
         }
-        else if ( lb <= leftBorder && rb >= rightBorder )
-        {
-            return sum;
-        }
+        // no intersection with the segment
         else if ( rb <= leftBorder || lb >= rightBorder )
         {
             return 0;
         }
+        // fully intersects with segment
+        else if ( lb <= leftBorder && rb >= rightBorder )
+        {
+            return sum;
+        }
+        // all of the rest
         return leftSegment->getSum( lb, rb ) + rightSegment->getSum( lb, rb );
     }
